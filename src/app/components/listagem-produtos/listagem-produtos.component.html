@@ -1,0 +1,18 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Valor</th>
+      <th>Selecionar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let produto of vetor">
+      <td>{{produto.id}}</td>
+      <td>{{produto.nome}}</td>
+      <td>{{produto.valor}}</td>
+      <td><input type="button" value="Selectionar" class="btn btn-primary"></td>
+    </tr>
+  </tbody>
+</table>
